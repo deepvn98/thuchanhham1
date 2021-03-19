@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let b=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let check= false;
+    function getStar(){
+        let input=prompt("nhập tên ngôi sao ban muốn tìm")
+    for (i=0;i<a.length;i++) {
+        if(a[i]==input){
+            alert(b[i]);
+            check=true;
+        }
+    }if(!check){
+        alert("không có chòm sao tương ứng")
+
+        }
+    }getStar()
+
+</script>
+</html>

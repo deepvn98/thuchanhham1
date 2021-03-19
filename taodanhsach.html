@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Thêm mới" id="themmoi" onchange="click1()">
+<table>
+    <tr>
+        <th>Tên công việc</th>
+    </tr>
+<tbody id="id">
+<tr>
+    <th>jksdfhs</th>
+</tr>
+</tbody>
+</table>
+</body>
+<script>
+    let list=[
+        "Đi học"
+    ];
+    //hiển thị dữ liệu
+    function show(){
+        for (i=0;i<list.length;i++){
+            let content="";
+            content+="<tr><th>"+list[i]+"</th></tr>"
+        }document.getElementById("id").innerHTML= content;
+    }
+    function click1(){
+        let them=document.getElementById("themmoi").value;
+        list.push(them);
+        show()
+    }
+</script>
+</html>
